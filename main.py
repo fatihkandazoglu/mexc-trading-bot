@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -23,4 +23,4 @@ def settings():
     return render_template("settings.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)  # Production ortamında debug=False kullanılmalı!
+    app.run(debug=True)
